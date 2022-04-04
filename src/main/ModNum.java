@@ -8,4 +8,8 @@ public class ModNum {
         this.mod = mod;
         this.num = num;
     }
+
+    public String getID() {
+        return mod + num;
+    }
 }

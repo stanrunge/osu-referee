@@ -10,4 +10,12 @@ public class Map {
         this.modnum = modnum;
         this.mapID = mapID;
     }
+
+    public int getMapID() {
+        return mapID;
+    }
+
+    public ModNum getModnum() {
+        return modnum;
+    }
 }
