@@ -35,7 +35,13 @@ public class Match {
         roll(player1, player2);
 
         while(!ended) {
-            playMap(round.getMap(new ModNum("No Mod", 1)));
+
+            ModNum mapBeingPlayed =  askForMap();
+            if (mapBeingPlayed == null) {
+                continue;
+            }
+
+            playMap(round.getMap(mapBeingPlayed));
             if (scorePlayer1 * 2 > round.getBestOf()) {
                 ended = true;
                 winner = player1;
@@ -92,5 +98,18 @@ public class Match {
     void printScore(Player player1, Player player2) {
         System.out.println("Score " + player1.getUsername() + ": " + scorePlayer1);
         System.out.println("Score " + player2.getUsername() + ": " + scorePlayer2);
+    }
+
+    ModNum askForMap() {
+        System.out.print("Enter the map you want to play: ");
+        String mapID = scanner.nextLine();
+
+        for(Map mapInPool : round.getMappool()) {
+            if (mapID.equals(mapInPool.getModnum().getID())) {
+                return mapInPool.getModnum();
+            }
+        }
+
+        return null;
     }
 }

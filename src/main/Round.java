@@ -32,4 +32,8 @@ public class Round {
         }
         return null;
     }
+
+    public ArrayList<Map> getMappool() {
+        return mappool;
+    }
 }
