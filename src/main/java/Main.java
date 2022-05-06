@@ -5,6 +5,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Starting osu! referee bot\n");
 
+        Integer testInt = 5;
+
+
         Round finals = new Round("Finals", 2, 13);
         finals.addMap(new Map(1, "NM", 1));
         Player stan = new Player(1, "Stan", 1);
