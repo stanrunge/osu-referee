@@ -1,19 +1,7 @@
-public class Player {
-    private int id;
-    private String username;
-    private int discordId;
-
+public class Player extends Person {
     public Player(int id, String username, int discordId) {
-        this.id = id;
-        this.username = username;
-        this.discordId = discordId;
+        super(id, username, discordId);
     }
 
-    public String getUsername() {
-        return username;
-    }
 
-    public int getDiscordId() {
-        return discordId;
-    }
 }

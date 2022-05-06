@@ -10,4 +10,20 @@ public class Score {
         this.player = player;
         this.score = score;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public Map getMap() {
+        return map;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public int getScore() {
+        return score;
+    }
 }

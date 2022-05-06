@@ -1,8 +1,10 @@
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Match {
     private final int id;
+    private ArrayList<StaffMember> addrefs = new ArrayList<StaffMember>();
     private final Round round;
     private final Player playerRed;
     private final Player playerBlue;
@@ -48,6 +50,10 @@ public class Match {
         }
 
         System.out.printf("Match ended! Winner: %s", winner.getUsername());
+    }
+
+    ArrayList<StaffMember> getAddrefs() {
+        return addrefs;
     }
 
     void roll() {
