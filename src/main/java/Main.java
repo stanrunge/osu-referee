@@ -3,7 +3,11 @@ import java.net.http.HttpResponse;
 import java.sql.*;
 import java.util.Scanner;
 
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.JDABuilder;
 import org.json.*;
+
+import javax.security.auth.login.LoginException;
 
 public class Main {
 //    File jsonFile = new File("config.json");
@@ -13,19 +17,19 @@ public class Main {
 //
 //    }
 
-    public static void main(String[] args) throws IOException {
+    static Config config = new Config();
+
+    public static void main(String[] args) throws IOException, LoginException {
         System.out.println("Starting osu! referee bot\n");
 
-        Integer testInt = 5;
-
-
-        Round finals = new Round("Finals", 2, 13);
-        finals.addMap(new Map(1, "NM", 1));
-        Player stan = new Player(1, "Stan", 1);
-        Player nick = new Player(2, "Nick", 2);
-        Match match = new Match(1, finals, "", stan, nick);
-
-        match.play();
+        DiscordBot.main();
+//        Round finals = new Round("Finals", 2, 13);
+//        finals.addMap(new Map(1, "NM", 1));
+//        Player stan = new Player(1, "Stan", 1);
+//        Player nick = new Player(2, "Nick", 2);
+//        Match match = new Match(1, finals, "", stan, nick);
+//
+//        match.play();
     }
 
 //    static String connectToDatabase(String query) {
