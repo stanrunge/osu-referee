@@ -44,6 +44,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <artifactId>unirest-java</artifactId>
             <version>3.13.6</version>
         </dependency>
+        <dependency>
+            <groupId>net.dv8tion</groupId>
+            <artifactId>JDA</artifactId>
+            <version>5.0.0-alpha.11</version>
+        </dependency>
     </dependencies>
 
 </project>
