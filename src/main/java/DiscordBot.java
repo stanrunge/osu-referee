@@ -7,7 +7,9 @@ import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.requests.GatewayIntent;
+import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
 
 import javax.security.auth.login.LoginException;
 
@@ -20,21 +22,27 @@ public class DiscordBot extends ListenerAdapter {
                 .setActivity(Activity.playing("hello"))
                 .build();
 
-        jda.upsertCommand("ping", "Ping pong!").queue();
+        CommandListUpdateAction commands = jda.updateCommands();
+
+        commands.addCommands(
+                Commands.slash("creatematch", "Creates a match to referee.")
+        );
+
+        commands.addCommands(
+                Commands.slash("test", "Tests if the bot is working properly.")
+        );
+
+        commands.queue();
     }
 
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
-        if (!event.getName().equals("ping")) return;
-        event.reply("pong!").queue();
-    }
-
-    @Override
-    public void onMessageReceived(MessageReceivedEvent event) {
-        Message msg = event.getMessage();
-        if (msg.getContentRaw().equals("hello")) {
-            MessageChannel channel = event.getChannel();
-            channel.sendMessage("hi :)").queue();
+        switch (event.getName()) {
+            case "creatematch":
+                break;
+            case "test":
+                event.reply("The bot is working properly!").queue();
+                break;
         }
     }
 }

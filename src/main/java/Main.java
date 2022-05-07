@@ -22,6 +22,8 @@ public class Main {
     public static void main(String[] args) throws IOException, LoginException {
         System.out.println("Starting osu! referee bot\n");
 
+
+
         DiscordBot.main();
 //        Round finals = new Round("Finals", 2, 13);
 //        finals.addMap(new Map(1, "NM", 1));
