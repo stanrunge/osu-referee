@@ -4,3 +4,4 @@
 # config.Config files
 src/main/resources/config.json
 src/main/resources/config.properties
+src/main/java/config/Config.java
