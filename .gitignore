@@ -1,1 +1,6 @@
+# Project files
+/.idea/
+
+# config.Config files
 src/main/resources/config.json
+src/main/resources/config.properties

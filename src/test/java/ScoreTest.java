@@ -1,4 +1,7 @@
 import org.junit.jupiter.api.Test;
+import osu.Map;
+import osu.Player;
+import osu.Score;
 
 import static org.junit.jupiter.api.Assertions.*;
 

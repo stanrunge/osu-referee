@@ -1,3 +1,5 @@
+package osu;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -24,7 +26,7 @@ public class Match {
     }
 
     public void play() {
-        System.out.printf("Match %d (%s) has started.%n%n", id, round.getName());
+        System.out.printf("osu.Match %d (%s) has started.%n%n", id, round.getName());
 
         System.out.println("Now rolling...");
         roll();
@@ -32,7 +34,7 @@ public class Match {
         while(!ended) {
             Map currentMap =  askForMap();
             if (currentMap == null) {
-                System.out.println("Map not found. Try again.\n");
+                System.out.println("osu.Map not found. Try again.\n");
                 continue;
             }
 
@@ -49,7 +51,7 @@ public class Match {
             }
         }
 
-        System.out.printf("Match ended! Winner: %s", winner.getUsername());
+        System.out.printf("osu.Match ended! Winner: %s", winner.getUsername());
     }
 
     ArrayList<StaffMember> getAddrefs() {

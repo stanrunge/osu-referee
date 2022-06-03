@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import osu.Event;
 
 import static org.junit.jupiter.api.Assertions.*;
 

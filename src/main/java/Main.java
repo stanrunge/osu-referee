@@ -1,11 +1,7 @@
 import java.io.IOException;
-import java.net.http.HttpResponse;
-import java.sql.*;
-import java.util.Scanner;
 
-import net.dv8tion.jda.api.JDA;
-import net.dv8tion.jda.api.JDABuilder;
-import org.json.*;
+import config.Config;
+import discord.Bot;
 
 import javax.security.auth.login.LoginException;
 
@@ -22,14 +18,12 @@ public class Main {
     public static void main(String[] args) throws IOException, LoginException {
         System.out.println("Starting osu! referee bot\n");
 
-
-
-        DiscordBot.main();
-//        Round finals = new Round("Finals", 2, 13);
-//        finals.addMap(new Map(1, "NM", 1));
-//        Player stan = new Player(1, "Stan", 1);
-//        Player nick = new Player(2, "Nick", 2);
-//        Match match = new Match(1, finals, "", stan, nick);
+        Bot.main();
+//        osu.Round finals = new osu.Round("Finals", 2, 13);
+//        finals.addMap(new osu.Map(1, "NM", 1));
+//        osu.Player stan = new osu.Player(1, "Stan", 1);
+//        osu.Player nick = new osu.Player(2, "Nick", 2);
+//        osu.Match match = new osu.Match(1, finals, "", stan, nick);
 //
 //        match.play();
     }

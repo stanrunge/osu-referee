@@ -1,3 +1,5 @@
+package osu;
+
 public class StaffMember extends Person {
     private int osuId;
 

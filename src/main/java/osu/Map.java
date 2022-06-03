@@ -1,3 +1,5 @@
+package osu;
+
 public class Map {
     private int id;
     private String mod;

@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import osu.Map;
+import osu.Round;
 
 import java.util.ArrayList;
 

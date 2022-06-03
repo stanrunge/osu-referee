@@ -1,3 +1,5 @@
+package osu;
+
 public class Score {
     private int id;
     private Map map;
