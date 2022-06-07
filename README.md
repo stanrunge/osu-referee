@@ -14,12 +14,21 @@ An automated osu! referee client for use for tournaments.
 - Java
 - JDA
 
-### Roadmap
+### Roadmap 0/0 (0%)
 - [x] Connect to Discord
-- [x] Connect to Challonge
+  - [x] Commands
+    - [ ] Match
+      - [ ] Create
+      - [ ] Start
+      - [ ] Delete
+- [ ] Connect to Challonge
+  - [ ] Connect to v1 API
+  - [ ] Upgrade to OAuth2
 - [ ] Connect to osu!
+  - [ ] Create bot account
 - [ ] Configuration
 - [ ] Referee logic
+- [ ] Refactor/cleanup
 
 ### Contact
 Stan Runge - [@stanrunge](https://www.twitter.com/stanrunge) - stanrunge03@gmail.com
