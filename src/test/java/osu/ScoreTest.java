@@ -1,3 +1,5 @@
+package osu;
+
 import org.junit.jupiter.api.Test;
 import osu.Map;
 import osu.Player;

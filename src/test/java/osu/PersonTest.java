@@ -1,3 +1,5 @@
+package osu;
+
 import org.junit.jupiter.api.Test;
 import osu.Person;
 import osu.Player;
