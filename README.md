@@ -14,7 +14,7 @@ An automated osu! referee client for use for tournaments.
 - Java
 - JDA
 
-### Roadmap 0/0 (0%)
+### Roadmap 2/14 (14.3%)
 - [x] Connect to Discord
   - [x] Commands
     - [ ] Match
