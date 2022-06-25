@@ -1,9 +1,6 @@
-package osu;
+package com.stanrunge.opt3.osu;
 
 import org.junit.jupiter.api.Test;
-import osu.Person;
-import osu.Player;
-import osu.StaffMember;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

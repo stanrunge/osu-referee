@@ -5,8 +5,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <groupId>com.cesgaming</groupId>
-    <artifactId>osu-referee</artifactId>
+    <artifactId>com.stanrunge.opt3.osu-referee</artifactId>
     <version>1.0</version>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -14,7 +21,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     </properties>
     <packaging>jar</packaging>
 
-    <name>osu! referee bot</name>
+    <name>com.stanrunge.opt3.osu! referee bot</name>
     <url>https://maven.apache.org</url>
 
     <dependencies>
@@ -35,6 +42,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20220320</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
         </dependency>
 
 <!--        JUnit-->
@@ -64,30 +76,37 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <version>1.2.11</version>
         </dependency>
 
-<!--        Challonge-->
-        <dependency>
-            <groupId>at.stefangeyer.challonge</groupId>
-            <artifactId>core</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>at.stefangeyer.challonge.serializer</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>at.stefangeyer.challonge.rest</groupId>
-            <artifactId>retrofit</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-
 <!--        Spring-->
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-bom</artifactId>
-            <version>2021.2.0</version>
-            <scope>import</scope>
-            <type>pom</type>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

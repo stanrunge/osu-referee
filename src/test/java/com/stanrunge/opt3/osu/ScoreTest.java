@@ -1,9 +1,6 @@
-package osu;
+package com.stanrunge.opt3.osu;
 
 import org.junit.jupiter.api.Test;
-import osu.Map;
-import osu.Player;
-import osu.Score;
 
 import static org.junit.jupiter.api.Assertions.*;
 

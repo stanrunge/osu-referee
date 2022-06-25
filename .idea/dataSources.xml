@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://82.170.172.195:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="opt3@proj2.mysql.database.azure.com" uuid="e57f5601-5a14-42a0-9ea0-c042efb8ee95">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://proj2.mysql.database.azure.com:3306/opt3</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

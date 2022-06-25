@@ -1,8 +1,6 @@
-package osu;
+package com.stanrunge.opt3.osu;
 
 import org.junit.jupiter.api.Test;
-import osu.Map;
-import osu.Round;
 
 import java.util.ArrayList;
 
