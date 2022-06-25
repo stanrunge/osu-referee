@@ -15,7 +15,7 @@ An automated com.stanrunge.opt3.osu! referee client for use for tournaments.
 - JDA
 - Spring
 
-### Roadmap 0/0 (0%)
+### Roadmap 2/14 (14.3%)
 - [x] Connect to Discord
   - [x] Commands
     - [ ] Match
