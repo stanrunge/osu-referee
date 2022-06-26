@@ -7,6 +7,14 @@ import javax.persistence.Id;
 @Entity
 public class Match {
 
+    public Match() {
+        // get team 1 by id
+        setTeam2(team);
+
+        // get team 2 by id
+        setTeam2(team);
+    }
+
     @Id
     @Column(name = "id", nullable = false)
     private Integer id;
@@ -19,6 +27,25 @@ public class Match {
 
     @Column(name = "team2_id")
     private Integer team2Id;
+
+    private Team team1;
+    private Team team2;
+
+    public Team getTeam1() {
+        return team1;
+    }
+
+    public void setTeam1(Team team1) {
+        this.team1 = team1;
+    }
+
+    public Team getTeam2() {
+        return team2;
+    }
+
+    public void setTeam2(Team team2) {
+        this.team2 = team2;
+    }
 
     public Integer getTeam2Id() {
         return team2Id;
